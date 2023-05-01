@@ -83,9 +83,10 @@ body{
 .left__input--medium{
     width: 100%;
 }
-.left__input--buttom{
-    border-color: var(--veryDarkViolet);
-    color: var(--veryDarkViolet);
+input[type=submit]{
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    letter-spacing: 0.1rem;
 }
 .attribution { 
     font-size: 11px; text-align: center; 
