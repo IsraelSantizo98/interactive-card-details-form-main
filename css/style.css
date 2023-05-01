@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 :root{
-    --linearGradientActiveInput: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --linearGradientActiveInput1: hsl(249, 99%, 64%);
+    --linearGradientActiveInput2: hsl(278, 94%, 30%);
     --redInputError: hsl(0, 100%, 66%);
     --white: hsl(0, 0%, 100%);
     --lightGrayishViolet: hsl(270, 3%, 87%);
@@ -27,6 +28,66 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+}
+/* Especificos */
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+/* Left */
+.left{
+    background-color: var(--white);
+}
+.left__form{
+    width: 40rem;
+    padding: 2rem;
+}
+.left__name{
+    display: block;
+}
+.left__label{
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--veryDarkViolet);
+    letter-spacing: 0.2rem;
+}
+.left__input{
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    border: .1rem solid var(--lightGrayishViolet);
+}
+.left__input:focus{
+    outline: none;
+    border-color: linear-gradient(var(--linearGradientActiveInput1), var(--linearGradientActiveInput2));
+}
+.left__date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left__ym, .left__cvc{
+    width: 50%;
+}
+.left__input--small{
+    width: 40%;
+    margin-right: 0.5rem;
+}
+.left__input--medium{
+    width: 100%;
+}
+input[type=submit]{
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    letter-spacing: 0.1rem;
 }
 .attribution { 
     font-size: 11px; text-align: center; 

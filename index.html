@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
-<body class="container">
+<body class="container d-flex">
   <div class="right">
     <div class="right__card">
       <img src="images/bg-card-front.png" alt="Card Front">
@@ -16,31 +16,35 @@
   </div>
   <div class="left">
     <form action="" class="left__form">
-      <div class="left__name">
-        <label for="" class="left__label">Cardholder Name</label>
-        <input type="number" name="" id="" placeholder="e.g Jane Applessed" class="left__input">
+      <div class="left__container1">
+        <div class="left__name mb-2">
+          <label for="" class="left__label">Cardholder Name</label>
+          <input type="number" name="" id="" placeholder="e.g Jane Applessed" class="left__input">
+        </div>
+        <div class="left__number mb-2">
+          <label for="" class="left__label">Card Number</label>
+          <input type="number" name="" id="" placeholder="e.g 1234 5678 9123 0000" class="left__input" maxlength="19">
+        </div>
       </div>
-      <div class="left__number">
-        <label for="" class="left__label">Card Number</label>
-        <input type="number" name="" id="" placeholder="e.g 1234 5678 9123 0000" class="left__input">
+      <div class="left__container2">
+        <div class="left__date mb-2">
+          <div class="left__ym">
+            <label for="" class="left__label">Exp. Date (MM/YY)</label>
+            <input type="number" placeholder="MM" class="left__input left__input--small" maxlength="2">
+            <input type="number" placeholder="YY" class="left__input left__input--small" maxlength="2">
+          </div>
+          <div class="left__cvc">
+            <label for="" class="left__label">Cvc</label>
+            <input type="number" placeholder="e.g 123" class="left__input left__input--medium" maxlength="3">
+          </div>
+        </div>
       </div>
-      <div class="left__date">
-        <label for="" class="left__label">Exp. Date (MM/YY)</label>
-        <input type="number" placeholder="MM" class="left__input">
-        <input type="number" placeholder="YY" class="left__input">
-      </div>
-      <div class="left__cvc">
-        <label for="" class="left__label">Cvc</label>
-        <input type="number" placeholder="e.g 123" class="left__input">
-      </div>
-      <div class="left__confimr">
-        <input type="submit" value="Confirm" class="left__input">
+      <div class="left__container3">
+        <div class="left__confirm">
+          <input type="submit" value="Confirm" class="left__input">
+        </div>
       </div>
     </form>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
