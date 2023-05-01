@@ -73,8 +73,19 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.left__ym, .left__cvc{
+    width: 50%;
+}
 .left__input--small{
-    width: 20%;
+    width: 40%;
+    margin-right: 0.5rem;
+}
+.left__input--medium{
+    width: 100%;
+}
+.left__input--buttom{
+    border-color: var(--veryDarkViolet);
+    color: var(--veryDarkViolet);
 }
 .attribution { 
     font-size: 11px; text-align: center; 
