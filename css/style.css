@@ -38,6 +38,17 @@ body{
 .mb-2{
     margin-bottom: 2rem;
 }
+/* Right */
+.right{
+    width: 50rem;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(100,72,254);
+    background: linear-gradient(150deg, rgba(100,72,254,1) 0%, rgba(96,5,148,1) 25%, rgba(100,72,254,1) 100%);
+}
+.right__front{
+    text-align: left;
+}
 /* Left */
 .left{
     background-color: var(--white);
